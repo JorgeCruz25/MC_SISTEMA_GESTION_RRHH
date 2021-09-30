@@ -1,0 +1,3 @@
+﻿Public Class NMRegMypeBancoBancoMotorizadoPrueba
+
+End Class

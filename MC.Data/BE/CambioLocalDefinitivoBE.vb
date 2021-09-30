@@ -1,0 +1,34 @@
+﻿Public Class CambioLocalDefinitivoBE
+    Public Property IDFORMATOCAMBIO As Integer
+    Public Property NUMEROFORMATOCAMBIO As String
+    Public Property IDLOCAL As Integer
+    Public Property IDORGANIGRAMAORIGEN As Integer
+    Public Property IDORGANIGRAMADESTINO As Integer
+    Public Property RAZONCOMERCIAL As String
+    Public Property IDSOLICITANTE As Integer
+    Public Property IDEMPLEADO As Integer
+    Public Property IDEMPLEADOCARGO As Integer
+    Public Property IDEMPLEADOTIPOCONTRATO As String
+    Public Property IDNUEVOCARGO As Integer
+    Public Property NUEVOCARGO As String
+    Public Property IDNUEVOTIPOCONTRATO As String
+    Public Property NUEVOTIPOCONTRATO As String
+    Public Property IDNUEVOLOCAL As Integer
+    Public Property NUEVOLOCAL As String
+    Public Property FECHACAMBIO As Date
+    Public Property SOLICITANTENOMBRE As String
+    Public Property EMPLEADONOMBRE As String
+    Public Property EMPLEADOCARGO As String
+    Public Property EMPLEADODNI As String
+    Public Property EMPLEADOTIPOCONTRATO As String
+    Public Property FECHAINGRESO As String
+    Public Property FECHAFIN As String
+    Public Property HORAINGRESO As String
+    Public Property HORAFIN As String
+    Public Property TIPOCONTRATOACTUAL As String
+    Public Property CODIGOUNICO As String
+    Public Property IDTIPODOCUMENTOIDENTIDAD As Int32
+    Public Property IDDISTRITO As Integer
+    Public Property IDESTADOEMPLEADO As Int32
+    Public Property TIPOCAMBIODEFINITIVO As String
+End Class

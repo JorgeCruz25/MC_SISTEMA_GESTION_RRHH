@@ -1,0 +1,3 @@
+﻿Public Class Mype_InicioIncrementoActividad_PersonalAdministrativo
+
+End Class

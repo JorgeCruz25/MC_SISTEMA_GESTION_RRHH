@@ -1,0 +1,102 @@
+﻿Public Class EmpleadoBE
+    Public Property CODIGOUNICO As String
+    Public Property IDEMPLEADO As Int32
+    Public Property IDLOCAL As Int32
+    Public Property NOMBRES As String
+    Public Property APELLIDOPATERNO As String
+    Public Property APELLIDOMATERNO As String
+    Public Property DNI As String
+    Public Property DIRECCION As String
+    Public Property IDCARGO As Int32
+    Public Property FECHACESE As String
+    Public Property CARGO As String
+    Public Property RAZONSOCIAL As String
+    Public Property RAZONCOMERCIAL As String
+    Public Property TELEFONOPERSONAL As String
+    Public Property CORREOPERSONAL As String
+    Public Property ESTADO As String
+    Public Property TIPOEMPLEADO As String
+    Public Property CORREOTRABAJO As String
+    Public Property TELEFONOTRABAJO As String
+    Public Property FECHANACIMIENTO As Date
+    Public Property IDTIPOIDENTIDAD As Integer
+    Public Property IDUBIGEO As Integer
+    Public Property IDSEXO As Integer
+    Public Property IDESTADOCIVIL As Integer
+    Public Property TIPOCONTRATO As String
+    Public Property FECHAINGRESOCOMPANIA As Date
+    Public Property FECHAINGRESOCORPORACION As Date
+    Public Property SUELDO As Double
+    Public Property SUELDOMONEDA As String
+    Public Property IDREGIMENSALARIAL As Integer
+    Public Property PAIS As String
+    Public Property NACIONALIDAD As String
+    Public Property FECHAFINALCONTRATO As Date
+    Public Property MATRICULA As String
+    Public Property CODIGOCATEGORIA As String
+    Public Property CATEGORIA As String
+    Public Property CODIGOTIPOEMPLEADO As String
+    Public Property CODIGOUBICACIONFISICA As String
+    Public Property ADRYAN_TIPOIDENTIDAD As String
+    Public Property ADRYAN_PUESTO_ORGANICA As String
+    Public Property ADRYAN_UNIDAD_FUNCIONAL As String
+    Public Property ADRYAN_DISTRITO As String
+    Public Property ADRYAN_PROVINCIA As String
+    Public Property ADRYAN_DEPARTAMENTO As String
+    Public Property ADRYAN_TIPOREMUNERACION As String
+    Public Property ADRYAN_FISCALIZABLE As String
+    Public Property ADRYAN_DIRECCIONCONFIANZA As String
+    Public Property DIRECCIONCONFIANZA As String
+    Public Property ADRYAN_ESQUEMAVACACIONAL As String
+    Public Property ADRYAN_TIPOFONDOPENSIONES As String
+    Public Property ADRYAN_TIPOAFP As String
+    Public Property ADRYAN_TIPOTRABAJADORSUNAT As String
+    Public Property TRABAJADORSUNAT As String
+    Public Property ADRYAN_COMISIONMIXTA As String
+    Public Property ADRYAN_CONTROLINMEDIATO As String
+    Public Property ADRYAN_JORNADAMAXIMA As String
+    Public Property ADRYAN_CODIGOSPP As String
+    Public Property ADRYAN_FECHAINGRESOAFP As DateTime
+    Public Property ADRYAN_TIPO_CUENTACTS As String
+    Public Property ADRYAN_INSTITUCIONFINANCIERACTS As String
+    Public Property INSTITUCION_FINANCIERA_CTS As String
+
+    Public Property ADRYAN_INSTITUCIONFINANCIERAENVIOCTS As String
+    Public Property INSTITUCION_FINANCIERA_ENVIO_CTS As String
+    Public Property ADRYAN_NUMEROCUENTACTS As String
+    Public Property ADRYAN_GRADOSALARIAL As String
+    Public Property ADRYAN_BANCOABONO As String
+    Public Property ADRYAN_TIPOCUENTAABONO As String
+    Public Property MONEDA_CTS As String
+    Public Property IDUSUARIOREGISTRO As Integer
+    Public Property USUARIOREGISTRO As String
+    Public Property NUMEROCUENTAABONO As String
+    Public Property IDTIPOCUENTAABONO As String
+    Public Property IDFORMAPAGO As Integer
+    Public Property IDBANCOABONO As Integer
+    Public Property SEXO As String
+    Public Property TIPODOCUMENTO As String
+    Public Property TIPOCONTRATODESCRIPCION As String
+    Public Property EDAD As Integer
+    Public Property ESTADOCIVIL As String
+    Public Property TIPOREMUNERACION As String
+    Public Property ESQUEMAVACACIONAL As String
+    Public Property REGIMENSALARIALDESCRIPCION As String
+    Public Property CODIGOAFPDESCRIPCION As String
+    Public Property FONDODEPENCIONES As String
+    Public Property TIPOEMPLEADODESCRIPCION As String
+    Public Property IDORGANIGRAMA As Int32
+
+    Public Property INDICADORINDETERMINADO As String
+    Public Property UBIGEO As String
+
+
+    Public Property BANCOABONO As String
+    Public Property TIPOCUENTAABONO As String
+    Public Property FORMAPAGOEMPLEADO As String
+
+    Public Property CODIGOBANCOABONOPROPIETARIO As String
+    Public Property BANCOABONOPROPIETARIO As String
+
+
+End Class

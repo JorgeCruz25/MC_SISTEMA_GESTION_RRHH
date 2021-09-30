@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="MC_CONTROLATENCIONESConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=SISTEMAS06;Initial Catalog=MCCA_CONTROL_ATENCIONES;User ID=desarrollo;Password=sistemas&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SISTEMAS06;Initial Catalog=MCCA_CONTROL_ATENCIONES;User ID=desarrollo;Password=sistemas</Value>
+    </Setting>
+    <Setting Name="skin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DevExpress Style</Value>
+    </Setting>
+    <Setting Name="MC_ADRYANConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=sistemas06;Initial Catalog=ADRYAN_MCRSCEM;User ID=desarrollo;Password=sistemas&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=sistemas06;Initial Catalog=ADRYAN_MCRSCEM;User ID=desarrollo;Password=sistemas</Value>
+    </Setting>
+    <Setting Name="MC_CENTRALConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.6.91;Initial Catalog=MC_CENTRAL;User ID=desarrollo;Password=sistemas&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.6.91;Initial Catalog=MC_CENTRAL;User ID=desarrollo;Password=sistemas</Value>
+    </Setting>
+    <Setting Name="FuenteSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="FuenteName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tahoma</Value>
+    </Setting>
+    <Setting Name="FuenteStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

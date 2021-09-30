@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XrLabel13.Text" xml:space="preserve">
+    <value>SETIMO.- EL TRABAJADOR, por no trabajar más de 4 horas diarias ni 20 semanales no tiene los derechos y beneficios laborales que la legislación laboral establece para quienes superan esta jornada laboral, sin embargo se obliga a inscribir en el Libro de Planillas de sueldos y salarios donde se indicará que su jornada es inferior a 4 horas diarias.</value>
+  </data>
+  <data name="XrLabel12.Text" xml:space="preserve">
+    <value>De conformidad a lo dispuesto por el artículo 1º de la Ley Nº 28051, Ley de Prestaciones Alimentarias en beneficio de los trabajadores sujetos al Régimen Laboral de la Actividad Privada, y el artículo 1º de su Reglamento, aprobado por Decreto Supremo Nº 013-2003-TR, modificado por Decreto Supremo Nº 006-2006-TR, EL EMPLEADOR otorgará a EL TRABAJADOR prestaciones alimentarias equivalentes a un monto que no deberá exceder del 20% de la remuneración ordinaria de EL TRABAJADOR ni superar las dos (2) remuneraciones mínimas vitales. De acuerdo a lo establecido en la cláusula precedente, dichas prestaciones alimentarias serán entregadas siempre que EL TRABAJADOR cumpla las condiciones objetivas que oportunamente le serán comunicadas por EL EMPLEADOR.
+De acuerdo al artículo 3º de la Ley antes referida, el valor de las prestaciones alimentarias constituye remuneración no computable y, por tanto, no se tendrá en cuenta para la determinación de derechos o beneficios de naturaleza laboral, sea de origen legal o convencional, ni para los aportes y contribuciones a la Seguridad Social.
+EL EMPLEADOR otorgará las prestaciones alimentarias a las que se hace referencia en la presente cláusula siempre que se mantenga vigente el presente contrato.
+
+</value>
+  </data>
+  <data name="XrLabel10.Text" xml:space="preserve">
+    <value>La TARJETA será recargable; en tal sentido, EL EMPLEADOR, en uso de las facultades de su poder de dirección, podrá efectuar recargas de la TARJETA a título de liberalidad cuando lo considere pertinente, sin que necesariamente exista una periodicidad predeterminada para ello, dejándose a entender que tales recargas no constituyen ni generan una obligación por parte del empleador.</value>
+  </data>
+  <data name="XrLabel9.Text" xml:space="preserve">
+    <value>Asimismo  en Virtud al presente Contrato EL EMPLEADOR voluntariamente pacta con EL TRABAJADOR,  que el primero de los nombrados entregará en favor del segundo prestaciones alimentarias bajo la modalidad de suministro indirecto; siempre y cuando EL TRABAJADOR cumpla las condiciones objetivas (metas de venta y producción) que oportunamente le serán comunicadas por EL EMPLEADOR.
+En cumplimiento de lo acordado por la presente cláusula, EL EMPLEADOR entregará a nombre del Trabajador, una Tarjeta Provis Alimentación (en adelante, la “TARJETA”) emitida por TEBCA PERÚ, TRANSFERENCIA ELECTRÓNICA BENEFICIOS S.A.C., la cual podrá ser utilizada por EL BENEFICIARIO en establecimientos afiliados a la red de Provis Alimentación a nivel nacional, únicamente para la adquisición de alimentos y comidas, encontrándose prohibido su canje por dinero en efectivo. El presente beneficio se encuentra regulado en el segundo artículo, literal b.1) de la Ley 28501.</value>
+  </data>
+  <data name="XrLabel7.Text" xml:space="preserve">
+    <value>CUARTO.- EL TRABAJADOR deberá cumplir con las normas complementarias propias del centro de trabajo y las que se imparten por necesidades de servicio en ejercicio de las facultades de administración que como empleados corresponden a LA EMPRESA de conformidad con el Art. 9 del TUO del D. Leg. Nº 728. 
+Asimismo EL TRABAJADOR se compromete, cuando corresponda, a observar las siguientes medidas en materia de Seguridad y Salud en el Trabajo en conformidad con la Ley Nº 29783 Ley de Seguridad y Salud en el Trabajo aprobado por D.S. Nº 005-2012-TR:
+a)   Acudir a las capacitaciones en Seguridad y Salud en el Trabajo que brinde LA EMPRESA.
+b)   Utilizar los equipos de protección personal que LA EMPRESA le otorgue.
+c)   Tomar conocimiento y cumplir cabalmente las normas sobre Seguridad y Salud en el Trabajo establecidas en el Reglamento Interno de Seguridad y Salud en el Trabajo y en las directivas específicas dadas por el área de Seguridad y Salud en el Trabajo  de LA EMPRESA o por sus superiores. 
+d)   Desenvolverse dentro del centro de trabajo de manera segura, sin realizar acciones que puedan poner en riesgo su propia vida o integridad y/o la de terceros.
+e)   Notificar a LA EMPRESA en caso de detectar alguna práctica laboral que pueda ser considerada insegura o que ponga en riesgo a los trabajadores o terceros visitantes en los diversos centros de trabajo, a efectos que aquella pueda tomar las medidas correctivas del caso.
+El incumplimiento de la obligaciones detalladas será objeto de las sanciones que correspondan, pudiendo incluso, dependiendo de su gravedad, implicar la culminación del contrato de trabajo por omisión de falta grave.  
+</value>
+  </data>
+  <data name="XrLabel6.Text" xml:space="preserve">
+    <value>El TRABAJADOR mediante el presente contrato declara que no cuenta con más de un empleador a la firma del presente documento. Si en caso la mencionada declaración sea falsa o la situación indicada cambie durante la vigencia del  presente contrato, es decir que el trabajador cuente con dos o más empleadores a la vez y la misma no haya sido puesta en conocimiento del EMPLEADOR dentro de los 3 días hábiles siguientes desde la firma del presente contrato o desde que formalmente se  registra el alta en la planilla del segundo empleador; EL TRABAJADOR  será responsable de las consecuencias pecuniarias, legales y de otra índole que sean consecuencia de la situación que no fue informada oportunamente a EL EMPLEADOR; sin perjuicio de las sanciones que correspondan imponer de acuerdo al reglamento interno de trabajo vigente. </value>
+  </data>
+  <data name="XrLabel3.Text" xml:space="preserve">
+    <value>PRIMERO.- LA EMPRESA requiere cubrir temporalmente las necesidades de recursos humanos originados por necesidad de mercado, considerando que la actividad económica habitual es RESTAURANT – POLLOS A LA BRASA – VENTA DE LICOR COMO APERITIVO.</value>
+  </data>
+</root>

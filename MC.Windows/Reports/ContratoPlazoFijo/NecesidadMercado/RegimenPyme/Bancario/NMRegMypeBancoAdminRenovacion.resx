@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XrLabel137.Text" xml:space="preserve">
+    <value>LAS PARTES señalan como sus respectivos domicilios los especificados en la introducción del presente contrato, por lo que se considerarán válidas todas las comunicaciones y notificaciones dirigidas a las mismas con motivo de la ejecución del presente contrato. El cambio de domicilio de cualquiera de las partes surtirá efecto desde la fecha de su comunicación a la contraparte, por cualquier medio escrito.</value>
+  </data>
+  <data name="XrLabel134.Text" xml:space="preserve">
+    <value>LAS PARTES renuncian en forma expresa al fuero de sus domicilios y se someterán a la jurisdicción de los Jueces y Tribunales del Distrito Judicial de  Lima - Centro, para todos los efectos provenientes del presente contrato y de los demás beneficios derivados del mismo.</value>
+  </data>
+  <data name="XrLabel110.Text" xml:space="preserve">
+    <value>EL TRABAJADOR se obliga a respetar la propiedad intelectual de EL EMPLEADOR y de sus clientes, así como las normas de funcionamiento de la empresa y todo aquello que constituya información referida a la empresa y de propiedad de la misma.</value>
+  </data>
+  <data name="XrLabel112.Text" xml:space="preserve">
+    <value>La propiedad intelectual o industrial, según sea el caso, sobre inventos, productos especiales, procesos u otros de naturaleza análoga, que sean consecuencia de la labor desarrollada por EL TRABAJADOR en que haya concurrido, participado o colaborado, en su calidad de dependiente, incluyendo metodología, software computacional y materiales de apoyo, pertenecerá única y exclusivamente a EL EMPLEADOR.</value>
+  </data>
+  <data name="XrLabel113.Text" xml:space="preserve">
+    <value>EL TRABAJADOR se obliga a no trabajar directa o indirectamente en determinadas actividades similares a la actual o a no prestar sus servicios a los competidores de EL EMPLEADOR a nivel nacional o internacional durante el periodo de contratación laboral. De no cumplir esta obligación, se podrá demandar a EL TRABAJADOR por daños y perjuicios. Asimismo, EL EMPLEADOR podrá actuar en la vía penal correspondiente. Las penalidades que se establezcan y demás acciones no aplicarán en caso EL EMPLEADOR le de autorización expresamente y por escrito a EL TRABAJADOR para que pueda ejercer su actividad profesional conforme a lo mencionado anteriormente.</value>
+  </data>
+  <data name="XrLabel117.Text" xml:space="preserve">
+    <value>En caso que de las investigaciones previas del caso, EL EMPLEADOR estableciera que los hechos en que incurre EL TRABAJADOR constituyen y tipifican falta grave, causa justa de despido, podrá ejecutar dicha sanción previo el proceso de ley conforme a lo previsto en los artículos 25° y 31° del TUO de la LPCL. La sanción laboral se aplicará sin perjuicio de las responsabilidades civiles y/o penales que se deriven de los hechos que configuran la falta grave.</value>
+  </data>
+  <data name="XrLabel115.Text" xml:space="preserve">
+    <value>EL TRABAJADOR conviene que, durante la vigencia de su vínculo laboral con EL EMPLEADOR, no realizará, de manera directa o indirecta, para sí misma o para terceros, sean estas personas naturales o jurídicas, nacionales o extranjeras, públicas o privadas, lo siguiente</value>
+  </data>
+  <data name="XrLabel121.Text" xml:space="preserve">
+    <value>Desviar o intentar desviar clientes de EL EMPLEADOR o personal de éste, o llevar a cabo directa o indirectamente cualquier otra acción dañina o perjudicial para la reputación comercial y los signos distintivos de EL EMPLEADOR y de sus clientes.</value>
+  </data>
+  <data name="XrLabel125.Text" xml:space="preserve">
+    <value>De conformidad con el inciso c) del artículo 16° del TUO de la LPCL, LAS PARTES acuerdan, de forma expresa y voluntaria, que el presente Contrato se resolverá cuando ocurra cualquiera de los siguientes supuestos:</value>
+  </data>
+  <data name="XrLabel99.Text" xml:space="preserve">
+    <value>La enumeración efectuada en la sub-cláusula 10.1 de la presente cláusula es meramente enunciativa mas no limitativa, por lo que la obligación de confidencialidad alcanza a toda aquella información técnica, comercial y/o financiera, relacionados con planes, programas, costos, operaciones y/o técnicas de producción de EL EMPLEADOR o de sus subsidiarias o afiliadas, de las que tenga conocimiento o pueda tener acceso EL TRABAJADOR. En general, la obligación de confidencialidad incluye toda aquella información que no sea de dominio público, es decir, que esté en posesión o sea de propiedad de EL EMPLEADOR, salvo las excepciones contenidas en la sub-cláusula 10.4 de la presente cláusula.</value>
+  </data>
+  <data name="XrLabel95.Text" xml:space="preserve">
+    <value>EL TRABAJADOR declara conocer que la divulgación de información protegida, así como el uso no autorizado de la misma trae como consecuencia un grave daño económico para la empresa y en consecuencia, la infracción a esta norma implica falta grave, sin perjuicio del derecho de la empresa a accionar de conformidad con el artículo 165° del Código Penal. Sin perjuicio de lo señalado anteriormente, dado que se trata de la suscripción de un contrato privado entre ambas partes, cabe señalar que la obligación contenida en la presente cláusula, se mantiene aún después de terminado el presente contrato de trabajo a plazo determinado por un tiempo adicional de cinco años como mínimo en el caso de los secretos empresariales y en forma indefinida en el caso de los datos protegidos. Por ello se obliga a EL TRABAJADOR mantener siempre en absoluto secreto y confidencial a efectos de no usar, reproducir, copiar, revelar, en provecho propio y/o terceros, ni permitir que cualquier tercero use, reproduzca, copie o revele las informaciones confidenciales, sean estos, expedientes judiciales a sus clientes sin el expreso consentimiento por escrito de EL EMPLEADOR.</value>
+  </data>
+  <data name="XrLabel91.Text" xml:space="preserve">
+    <value>Se encuentran incluidos toda información sobre estos aspectos, proporcionada por otras personas o empresas con la cuales se tenga contrato o vínculo de alguna naturaleza, así como también de reserva en la información de los expedientes judiciales.</value>
+  </data>
+  <data name="XrLabel89.Text" xml:space="preserve">
+    <value>Forma de transporte, distribución, producción, almacenaje, embalado, marcas de productos usados en todos o algunos de los procesos; en relación a los productos comercializados y/o actividades de la empresa.</value>
+  </data>
+  <data name="XrLabel87.Text" xml:space="preserve">
+    <value>Información técnica y/o comercial, costos y precios, información bancaria, datos de los proveedores o de los clientes de la empresa, datos relacionados a insumos, proceso de compra, sistemas de ventas, política de descuentos o créditos, exigencia de garantías.</value>
+  </data>
+  <data name="XrLabel93.Text" xml:space="preserve">
+    <value>Se encuentran incluidos toda información sobre estos aspectos, proporcionada por otras personas o empresas con la cuales se tenga contrato o vínculo de alguna naturaleza, así como también de reserva en la información de los expedientes judiciales. Del mismo modo, EL TRABAJADOR tampoco revelará el hecho de haber recibido o estar por recibir información confidencial.</value>
+  </data>
+  <data name="XrLabel76.Text" xml:space="preserve">
+    <value>EL TRABAJADOR autoriza a EL EMPLEADOR que el envío de las boletas de pago y demás documentos laborales se pueda efectuar a su correo electrónico declarado en la introducción del presente Contrato. En tal sentido, EL TRABAJADOR se compromete a comunicar a EL EMPLEADOR cualquier modificación relacionada con su correo electrónico.  </value>
+  </data>
+  <data name="XrLabel74.Text" xml:space="preserve">
+    <value>EL TRABAJADOR autoriza a EL EMPLEADOR para que el pago de todos los conceptos descritos y/o contenidos en la cláusula quinta del presente Contrato, que deba percibir mensualmente o con motivo del cese, se efectúen mediante depósitos o transferencias a la siguiente cuenta de su titularidad, de corresponder: Cuenta de Ahorros en el ...................................................... N° ...................................... . Asimismo, EL TRABAJADOR se compromete a comunicar por escrito a EL EMPLEADOR, en su domicilio declarado en la introducción del presente Contrato, cualquier modificación relacionada con su Cuenta de Ahorros.</value>
+  </data>
+  <data name="XrLabel47.Text" xml:space="preserve">
+    <value>El incumplimiento de EL TRABAJADOR de cualquiera de las obligaciones establecidas en la sub-cláusula precedente será considerado como falta grave y, en consecuencia, EL EMPLEADOR podrá imponer la medida disciplinaria correspondiente, de acuerdo al RIT, RISST y a la legislación laboral peruana vigente.</value>
+  </data>
+  <data name="XrLabel55.Text" xml:space="preserve">
+    <value>Informar a EL EMPLEADOR en caso de detectar alguna práctica laboral que pueda ser considerada insegura o que ponga en riesgo a los trabajadores o terceros visitantes en los diversos centros de trabajo, a efectos que aquella pueda tomar las medidas correctivas del caso.</value>
+  </data>
+  <data name="XrLabel27.Text" xml:space="preserve">
+    <value>Asimismo, LAS PARTES acuerdan que la jornada y el horario de trabajo de EL TRABAJADOR será determinado por EL EMPLEADOR, en uso de sus facultades directrices y de acuerdo a sus necesidades operativas, respetando los límites máximos legalmente permitidos de 8 horas diarias o 48 horas semanales.</value>
+  </data>
+  <data name="XrLabel31.Text" xml:space="preserve">
+    <value>El trabajo en sobretiempo prestado por EL TRABAJADOR será voluntario, autorizado por EL EMPLEADOR y remunerado con un recargo de 25% para las 2 primeras horas y de 35% a partir de la tercera hora, salvo que LAS PARTES acuerden la compensación del trabajo en sobretiempo con períodos equivalentes de descanso, conforme a lo dispuesto en el artículo 10° del Texto Único Ordenado de la Ley de Jornada de Trabajo, Horario y Trabajo en Sobretiempo, aprobado por Decreto Supremo N° 007-2002-TR. </value>
+  </data>
+  <data name="XrLabel35.Text" xml:space="preserve">
+    <value>Proporcionar y/o facilitar a EL TRABAJADOR todas las herramientas, materiales y bienes que sean necesarios para que desarrolle sus labores, constituyendo dichas entregas condiciones de trabajo, según correspondan.</value>
+  </data>
+  <data name="XrLabel53.Text" xml:space="preserve">
+    <value>Acatar las siguientes medidas en materia de seguridad y salud en el trabajo, de conformidad con lo establecido en la Ley N° 29783 “Ley de Seguridad y Salud en el Trabajo” y en su Reglamento, aprobado por Decreto Supremo N° 005-2012-TR:</value>
+  </data>
+  <data name="XrLabel51.Text" xml:space="preserve">
+    <value>Acatar todos los reglamentos, directivas, políticas y cualquier normativa interna emitida por EL EMPLEADOR, tales como el Reglamento Interno de Trabajo (RIT) y el Reglamento Interno de Seguridad y Salud en el Trabajo (RISST).</value>
+  </data>
+  <data name="XrLabel49.Text" xml:space="preserve">
+    <value>Acatar todas las órdenes, mandatos y/o encargos que EL EMPLEADOR emita observando los criterios de razonabilidad, claridad, transparencia y buena fe, encontrándose sometido al cumplimiento estricto de las labores encomendadas para su puesto y a las directivas emanadas de sus Jefes o Superiores, de acuerdo a la estructura orgánica de EL EMPLEADOR.</value>
+  </data>
+  <data name="XrLabel61.Text" xml:space="preserve">
+    <value>Cumplir cabalmente las disposiciones sobre seguridad y salud en el trabajo previstas en el RISST y en las directivas específicas emitidas por el área designada por EL EMPLEADOR para velar por la seguridad y salud en el trabajo.</value>
+  </data>
+  <data name="XrLabel16.Text" xml:space="preserve">
+    <value>Una vez concluido el plazo de vigencia del presente Contrato, el vínculo laboral entre LAS PARTES se extinguirá sin necesidad de aviso previo por parte de alguna de ellas. No obstante, LAS PARTES podrán acordar la renovación o prórroga del presente Contrato con anterioridad a su vencimiento.</value>
+  </data>
+  <data name="XrLabel8.Text" xml:space="preserve">
+    <value>EL EMPLEADOR ha tenido un incremento imprevisible, coyuntural y temporal de los servicios que ofrece a sus clientes, con motivo de una mayor demanda de dichos servicios, razón por la cual, requiere la contratación de personal de forma temporal.</value>
+  </data>
+  <data name="XrLabel2.Text" xml:space="preserve">
+    <value>Conste por el presente documento, el CONTRATO DE TRABAJO SUJETO A MODALIDAD POR NECESIDADES DE MERCADO que, al amparo del Régimen Laboral Especial regulado por el Texto Único Ordenado de la Ley del Impulso al Desarrollo Productivo y al Crecimiento Empresarial, aprobado por Decreto Supremo N° 013-2013-PRODUCE (TUO de la LIDPCE) y conforme a lo dispuesto en el artículo 58° del Texto Único Ordenado del Decreto Legislativo N° 728, Ley de Productividad y Competitividad Laboral, aprobado por el Decreto Supremo N° 003-97-TR (en adelante, TUO de la LPCL), celebran:</value>
+  </data>
+</root>

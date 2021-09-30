@@ -1,0 +1,2217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{061F39B6-1088-4A85-BCAE-5061780F07D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MC.SistemaGestionRRHH.My.MyApplication</StartupObject>
+    <RootNamespace>MC.SistemaGestionRRHH</RootNamespace>
+    <AssemblyName>MC.SistemaGestionRRHH</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SistemaGestionRRHH.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5DACCCC97B04D1ACCDF30D87AD68B152309B950D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MC.SistemaGestionRRHH_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v16.1.Drawing, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Reporting.Extensions, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v16.1, Version=16.1.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.XLS.10.12.0\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.12.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.XLS.10.12.0\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=10.12.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.XLS.10.12.0\lib\net40\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=5.2.13.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.5.2.13\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccionesPersonal\EmpleadoAumentoSalarial.Designer.vb">
+      <DependentUpon>EmpleadoAumentoSalarial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoAumentoSalarial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoCargaMasiva.Designer.vb">
+      <DependentUpon>EmpleadoCargaMasiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoCargaMasiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioRazonIngresoEmpleadoEdit.Designer.vb">
+      <DependentUpon>CambioRazonIngresoEmpleadoEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioRazonIngresoEmpleadoEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionAsistencia.Designer.vb">
+      <DependentUpon>CapacitacionAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionNota.Designer.vb">
+      <DependentUpon>CapacitacionNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionTrabajador.Designer.vb">
+      <DependentUpon>CapacitacionTrabajador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\CapacitacionTrabajador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\ClaseDetails.Designer.vb">
+      <DependentUpon>ClaseDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\ClaseDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoSede.Designer.vb">
+      <DependentUpon>MantenimientoSede.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoSede.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoSedeDetails.Designer.vb">
+      <DependentUpon>MantenimientoSedeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoSedeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoCurso.Designer.vb">
+      <DependentUpon>MantenimientoCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoCursoDetails.Designer.vb">
+      <DependentUpon>MantenimientoCursoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoCursoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoTipoEscuela.Designer.vb">
+      <DependentUpon>MantenimientoTipoEscuela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoTipoEscuela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoTipoEscuelaDetails.Designer.vb">
+      <DependentUpon>MantenimientoTipoEscuelaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\MantenimientoTipoEscuelaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionCapacitacion.Designer.vb">
+      <DependentUpon>ProgramacionCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionCapacitacionDetails.Designer.vb">
+      <DependentUpon>ProgramacionCapacitacionDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionCapacitacionDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionEscuela.Designer.vb">
+      <DependentUpon>ProgramacionEscuela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionEscuela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionEscuelaDetails.Designer.vb">
+      <DependentUpon>ProgramacionEscuelaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\ProgramacionEscuelaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Report\NotasCursoEscuelaEmpleado.Designer.vb">
+      <DependentUpon>NotasCursoEscuelaEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Report\NotasCursoEscuelaEmpleado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CartaCorrectiva\CartaCorrectivaArchivo.Designer.vb">
+      <DependentUpon>CartaCorrectivaArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaCorrectiva\CartaCorrectivaArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaCorrectiva\SolicitudCartaCorrectivaList.Designer.vb">
+      <DependentUpon>SolicitudCartaCorrectivaList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaCorrectiva\SolicitudCartaCorrectivaList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaCorrectiva\SolicitudCartaCorrectivaListHistorial.Designer.vb">
+      <DependentUpon>SolicitudCartaCorrectivaListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaCorrectiva\SolicitudCartaCorrectivaListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescuentoReintegro\DescuentoReintegroHistorialList.Designer.vb">
+      <DependentUpon>DescuentoReintegroHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DescuentoReintegro\DescuentoReintegroHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescuentoReintegro\DescuentoReintegroList.Designer.vb">
+      <DependentUpon>DescuentoReintegroList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DescuentoReintegro\DescuentoReintegroList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescuentoReintegro\ReporteDescuentoReintegroPrestamoList.Designer.vb">
+      <DependentUpon>ReporteDescuentoReintegroPrestamoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DescuentoReintegro\ReporteDescuentoReintegroPrestamoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoEmpleado\EmpleadoModificacionDatos.Designer.vb">
+      <DependentUpon>EmpleadoModificacionDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoEmpleado\EmpleadoModificacionDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoEmpleado\OpcionesModificar.Designer.vb">
+      <DependentUpon>OpcionesModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoEmpleado\OpcionesModificar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\AsignarDerechoHabiente.Designer.vb">
+      <DependentUpon>AsignarDerechoHabiente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\AsignarDerechoHabiente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\DesprocesarbeneficioAsignacion.Designer.vb">
+      <DependentUpon>DesprocesarbeneficioAsignacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\DesprocesarbeneficioAsignacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoDesasignarAsignacionFamiliar.Designer.vb">
+      <DependentUpon>ListadoDesasignarAsignacionFamiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoDesasignarAsignacionFamiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoEmpleadosAsignacionFamiliar.Designer.vb">
+      <DependentUpon>ListadoEmpleadosAsignacionFamiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoEmpleadosAsignacionFamiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumEliminarFormato.Designer.vb">
+      <DependentUpon>MemorandumEliminarFormato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumEliminarFormato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanilla.Designer.vb">
+      <DependentUpon>CargaPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanillaDetails.Designer.vb">
+      <DependentUpon>CargaPlanillaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanillaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanillaEmpleado.Designer.vb">
+      <DependentUpon>CargaPlanillaEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\CargaPlanillaEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\ConceptoPlanilla.Designer.vb">
+      <DependentUpon>ConceptoPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\ConceptoPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\ConceptoPlanillaDetails.Designer.vb">
+      <DependentUpon>ConceptoPlanillaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\ConceptoPlanillaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanilla.Designer.vb">
+      <DependentUpon>RespuestaPlanilla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanillaDetails.Designer.vb">
+      <DependentUpon>RespuestaPlanillaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanillaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanillaHistorial.Designer.vb">
+      <DependentUpon>RespuestaPlanillaHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Planillas\RespuestaPlanillaHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonal.Designer.vb">
+      <DependentUpon>rptEmisionRequerimientoPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonalGrid.Designer.vb">
+      <DependentUpon>rptEmisionRequerimientoPersonalGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonalGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivosGrid.Designer.vb">
+      <DependentUpon>rptEmisionRequerimientosMasivosGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivosGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientoPersonalRPT.Designer.vb">
+      <DependentUpon>RequerimientoPersonalRPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientoPersonalRPT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoHistorialRenovacion.Designer.vb">
+      <DependentUpon>EmpleadoHistorialRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoHistorialRenovacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoRenovacionContratoList.Designer.vb">
+      <DependentUpon>EmpleadoRenovacionContratoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoRenovacionContratoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoHijos.Designer.vb">
+      <DependentUpon>ListadoHijos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\ListadoHijos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonosExtras\BonoAntiguedadList.Designer.vb">
+      <DependentUpon>BonoAntiguedadList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BonosExtras\BonoAntiguedadList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonosExtras\BonoExtraEmpleadoList.Designer.vb">
+      <DependentUpon>BonoExtraEmpleadoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BonosExtras\BonoExtraEmpleadoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraDetails.Designer.vb">
+      <DependentUpon>SolicitudBonoExtraDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraList.Designer.vb">
+      <DependentUpon>SolicitudBonoExtraList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraListHistorial.Designer.vb">
+      <DependentUpon>SolicitudBonoExtraListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BonosExtras\SolicitudBonoExtraListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioCargoDetails.Designer.vb">
+      <DependentUpon>CambioCargoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioCargoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoDetails.Designer.vb">
+      <DependentUpon>CambioDefinitivoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoList.Designer.vb">
+      <DependentUpon>CambioDefinitivoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoListHistorial.Designer.vb">
+      <DependentUpon>CambioDefinitivoListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalDefinitivo\CambioDefinitivoListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalDetails.Designer.vb">
+      <DependentUpon>CambioTemporalDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalList.Designer.vb">
+      <DependentUpon>CambioTemporalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalListHistorial.Designer.vb">
+      <DependentUpon>CambioTemporalListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambioLocalTemporal\CambioTemporalListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoArchivos.Designer.vb">
+      <DependentUpon>CartaConocimientoArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoDetails.Designer.vb">
+      <DependentUpon>CartaConocimientoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoHistorialList.Designer.vb">
+      <DependentUpon>CartaConocimientoHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoList.Designer.vb">
+      <DependentUpon>CartaConocimientoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaConocimiento\CartaConocimientoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaRenuncia\CartaRenunciaListHistorial.Designer.vb">
+      <DependentUpon>CartaRenunciaListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaRenuncia\CartaRenunciaListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaRenuncia\RenunciaArchivo.Designer.vb">
+      <DependentUpon>RenunciaArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaRenuncia\RenunciaArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaRenuncia\RenunciaDetails.Designer.vb">
+      <DependentUpon>RenunciaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaRenuncia\RenunciaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartaRenuncia\SolicitudCartaRenunciaList.Designer.vb">
+      <DependentUpon>SolicitudCartaRenunciaList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CartaRenuncia\SolicitudCartaRenunciaList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCese.designer.vb">
+      <DependentUpon>EmpleadoCese.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCese.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCeseDetails.Designer.vb">
+      <DependentUpon>EmpleadoCeseDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCeseDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCeseListHistorial.Designer.vb">
+      <DependentUpon>EmpleadoCeseListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\EmpleadoCeseListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\EmpleadoDerechoHabientes.Designer.vb">
+      <DependentUpon>EmpleadoDerechoHabientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\EmpleadoDerechoHabientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\AsignacionFamiliarDetalle.Designer.vb">
+      <DependentUpon>AsignacionFamiliarDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\AsignacionFamiliarDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\SolicitudAsignacionFamiliarList.Designer.vb">
+      <DependentUpon>SolicitudAsignacionFamiliarList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\SolicitudAsignacionFamiliarList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\SolicitudAsignacionFamiliarListHistorial.Designer.vb">
+      <DependentUpon>SolicitudAsignacionFamiliarListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AsignacionFamiliar\SolicitudAsignacionFamiliarListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoHistorial.Designer.vb">
+      <DependentUpon>EmpleadoHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoIngresoList.Designer.vb">
+      <DependentUpon>EmpleadoIngresoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoIngresoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoList.Designer.vb">
+      <DependentUpon>EmpleadoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoListEditHijos.Designer.vb">
+      <DependentUpon>EmpleadoListEditHijos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoListEditHijos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseLegalList.Designer.vb">
+      <DependentUpon>SolicitudCeseLegalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseLegalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseNoLegalList.Designer.vb">
+      <DependentUpon>SolicitudCeseNoLegalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseNoLegalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteArchivos.Designer.vb">
+      <DependentUpon>IncidenteAccidenteArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteDetails.Designer.vb">
+      <DependentUpon>IncidenteAccidenteDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteHistorialList.Designer.vb">
+      <DependentUpon>IncidenteAccidenteHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteList.Designer.vb">
+      <DependentUpon>IncidenteAccidenteList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncidenteAccidente\IncidenteAccidenteList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralArchivos.Designer.vb">
+      <DependentUpon>InformeGeneralArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralDetails.Designer.vb">
+      <DependentUpon>InformeGeneralDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralHistorialList.Designer.vb">
+      <DependentUpon>InformeGeneralHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralList.Designer.vb">
+      <DependentUpon>InformeGeneralList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InformeGeneral\InformeGeneralList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaArchivo.Designer.vb">
+      <DependentUpon>LactanciaArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaDetails.Designer.vb">
+      <DependentUpon>LactanciaDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaList.Designer.vb">
+      <DependentUpon>LactanciaList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaListHistorial.Designer.vb">
+      <DependentUpon>LactanciaListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lactancia\LactanciaListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaActa.Designer.vb">
+      <DependentUpon>LicenciaActa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaActa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaArchivo.Designer.vb">
+      <DependentUpon>LicenciaArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaConGoceListHistorial.Designer.vb">
+      <DependentUpon>LicenciaConGoceListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaConGoceListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaEnfermedadList.Designer.vb">
+      <DependentUpon>LicenciaEnfermedadList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaEnfermedadList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaEnfermedadListHistorial.Designer.vb">
+      <DependentUpon>LicenciaEnfermedadListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaEnfermedadListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciasValidadasList.Designer.vb">
+      <DependentUpon>LicenciasValidadasList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciasValidadasList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumAnular.Designer.vb">
+      <DependentUpon>MemorandumAnular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumAnular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumArchivos.Designer.vb">
+      <DependentUpon>MemorandumArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumDescargo.Designer.vb">
+      <DependentUpon>MemorandumDescargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumDescargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumDetails.Designer.vb">
+      <DependentUpon>MemorandumDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumExonerar.Designer.vb">
+      <DependentUpon>MemorandumExonerar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumExonerar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumLegalEvaluadosList.Designer.vb">
+      <DependentUpon>MemorandumLegalEvaluadosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumLegalEvaluadosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumLegalList.Designer.vb">
+      <DependentUpon>MemorandumLegalList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumLegalList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumList.Designer.vb">
+      <DependentUpon>MemorandumList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoMovimiento.Designer.vb">
+      <DependentUpon>EmpleadoMovimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\EmpleadoMovimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoRenovacionList.designer.vb">
+      <DependentUpon>EmpleadoRenovacionList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenovacionContrato\EmpleadoRenovacionList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\IngresoPersonalEdit.designer.vb">
+      <DependentUpon>IngresoPersonalEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\IngresoPersonalEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumListHistorial.Designer.vb">
+      <DependentUpon>MemorandumListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciasDetails.Designer.vb">
+      <DependentUpon>LicenciasDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciasDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumListHistorialLegal.Designer.vb">
+      <DependentUpon>MemorandumListHistorialLegal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Memorandum\MemorandumListHistorialLegal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\ReportView.Designer.vb">
+      <DependentUpon>ReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\ReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseDescargoArchivos.Designer.vb">
+      <DependentUpon>SolicitudCeseDescargoArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseDescargoArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseEvaluadosList.Designer.vb">
+      <DependentUpon>SolicitudCeseEvaluadosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseEvaluadosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseList.Designer.vb">
+      <DependentUpon>SolicitudCeseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ceses\SolicitudCeseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionesPersonal\XtraUserControlWebBrowser.Designer.vb">
+      <DependentUpon>XtraUserControlWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccionesPersonal\XtraUserControlWebBrowser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciaSinGoceListHistorial.Designer.vb">
+      <DependentUpon>LicenciaSinGoceListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciaSinGoceListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciasSinGoceList.Designer.vb">
+      <DependentUpon>LicenciasSinGoceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciasSinGoceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoArchivos.Designer.vb">
+      <DependentUpon>NegacionTrasladoArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoDetails.Designer.vb">
+      <DependentUpon>NegacionTrasladoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoList.Designer.vb">
+      <DependentUpon>NegacionTrasladoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoHistorialList.Designer.vb">
+      <DependentUpon>NegacionTrasladoHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NegacionTranslado\NegacionTrasladoHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosDepositoDetails.designer.vb">
+      <DependentUpon>PrestamosDepositoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosDepositoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosDepositoList.designer.vb">
+      <DependentUpon>PrestamosDepositoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosDepositoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosRevisadosList.designer.vb">
+      <DependentUpon>PrestamosRevisadosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosRevisadosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosAdryanList.designer.vb">
+      <DependentUpon>PrestamosAdryanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\PrestamosAdryanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licencias\LicenciasConGoceList.Designer.vb">
+      <DependentUpon>LicenciasConGoceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licencias\LicenciasConGoceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoArchivos.Designer.vb">
+      <DependentUpon>SolicitudPrestamoArchivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoArchivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoDetails.designer.vb">
+      <DependentUpon>SolicitudPrestamoDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoList.designer.vb">
+      <DependentUpon>SolicitudPrestamoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoListHistorial.Designer.vb">
+      <DependentUpon>SolicitudPrestamoListHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos\SolicitudPrestamoListHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\Conclusion.Designer.vb">
+      <DependentUpon>Conclusion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\Conclusion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEdit.Designer.vb">
+      <DependentUpon>ConclusionEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEditDetalle.Designer.vb">
+      <DependentUpon>ConclusionEditDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEditDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActual.Designer.vb">
+      <DependentUpon>EstadoCondicionActual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActualEdit.Designer.vb">
+      <DependentUpon>EstadoCondicionActualEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActualEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulante.Designer.vb">
+      <DependentUpon>EstadoPostulante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulanteEdit.Designer.vb">
+      <DependentUpon>EstadoPostulanteEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulanteEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamiento.Designer.vb">
+      <DependentUpon>FuenteReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEdit.Designer.vb">
+      <DependentUpon>FuenteReclutamientoEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEditDetalle.Designer.vb">
+      <DependentUpon>FuenteReclutamientoEditDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEditDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionCanalesReclutamiento.Designer.vb">
+      <DependentUpon>rptEmisionCanalesReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionCanalesReclutamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionConclusionPostulanteCanalReclutamiento.Designer.vb">
+      <DependentUpon>rptEmisionConclusionPostulanteCanalReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionConclusionPostulanteCanalReclutamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionPuestosPorCanalReclutamiento.Designer.vb">
+      <DependentUpon>rptEmisionPuestosPorCanalReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionPuestosPorCanalReclutamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivos.Designer.vb">
+      <DependentUpon>rptEmisionRequerimientosMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQMasivosPostulantes.Designer.vb">
+      <DependentUpon>RQMasivosPostulantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQMasivosPostulantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosVerPostulantes.designer.vb">
+      <DependentUpon>RQNoMasivosVerPostulantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosVerPostulantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosProcesadosNoMasivos.Designer.vb">
+      <DependentUpon>RequerimientosProcesadosNoMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosProcesadosNoMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDesktop.designer.vb">
+      <DependentUpon>MEDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEDesktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQMasivosPostulantesAgregar.Designer.vb">
+      <DependentUpon>RQMasivosPostulantesAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQMasivosPostulantesAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantes.Designer.vb">
+      <DependentUpon>RQNoMasivosPostulantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantesAgregar.Designer.vb">
+      <DependentUpon>RQNoMasivosPostulantesAgregar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantesAgregar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantesBuscar.Designer.vb">
+      <DependentUpon>RQNoMasivosPostulantesBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RQNoMasivosPostulantesBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\PostulantesMasivosProcesados.Designer.vb">
+      <DependentUpon>PostulantesMasivosProcesados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\PostulantesMasivosProcesados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionCanalesReclutamiento.Designer.vb">
+      <DependentUpon>EmisionCanalesReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionCanalesReclutamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionConclusionPostulanteCanalReclutamiento.Designer.vb">
+      <DependentUpon>EmisionConclusionPostulanteCanalReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionConclusionPostulanteCanalReclutamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionRequerimientosMasivos.Designer.vb">
+      <DependentUpon>EmisionRequerimientosMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionRequerimientosMasivos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\ListadoPostulantesMasivos.Designer.vb">
+      <DependentUpon>ListadoPostulantesMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\ListadoPostulantesMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\ListadoPostulantesNoMasivos.Designer.vb">
+      <DependentUpon>ListadoPostulantesNoMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\ListadoPostulantesNoMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\Reportes.Designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionPuestosPorCanalReclutamiento.Designer.vb">
+      <DependentUpon>EmisionPuestosPorCanalReclutamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\EmisionPuestosPorCanalReclutamiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\ReporteView.Designer.vb">
+      <DependentUpon>ReporteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\ReporteView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\CanalesReclutamientoRPT.Designer.vb">
+      <DependentUpon>CanalesReclutamientoRPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\CanalesReclutamientoRPT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\ConclusionPostulanteCanalReclutamientoRPT.Designer.vb">
+      <DependentUpon>ConclusionPostulanteCanalReclutamientoRPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\ConclusionPostulanteCanalReclutamientoRPT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\PuestosPorCanalReclutamientoRPT.Designer.vb">
+      <DependentUpon>PuestosPorCanalReclutamientoRPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\PuestosPorCanalReclutamientoRPT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientosMasivosRPT.Designer.vb">
+      <DependentUpon>RequerimientosMasivosRPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientosMasivosRPT.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosProcesadosMasivos.Designer.vb">
+      <DependentUpon>RequerimientosProcesadosMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosProcesadosMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosMasivos.Designer.vb">
+      <DependentUpon>RequerimientosMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosNoMasivos.Designer.vb">
+      <DependentUpon>RequerimientosNoMasivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReclutamientoSeleccion\RequerimientosNoMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenovacionContrato\EnvioCorreoFirma.Designer.vb">
+      <DependentUpon>EnvioCorreoFirma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RenovacionContrato\EnvioCorreoFirma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoMotorizadoTiempoParcial.Designer.vb">
+      <DependentUpon>ContratoMotorizadoTiempoParcial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoMotorizadoTiempoParcial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoNecesidadMercado.Designer.vb">
+      <DependentUpon>ContratoNecesidadMercado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoNecesidadMercado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralBanAdminPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneralBanAdminRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizadoRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneralBanMotorizadoRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizadoRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizardoPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralBanMotorizardoPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizardoPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanOperativoPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralBanOperativoPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanOperativoPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneraBanOperativoRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneraBanOperativoRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneraBanOperativoRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralManualAdminPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneralManualAdminRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotoritazoPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralManualMotoritazoPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotoritazoPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotorizadoRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneralManualMotorizadoRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotorizadoRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoPrueba.Designer.vb">
+      <DependentUpon>NMRegGeneralManualOperativoPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoRenovacion.Designer.vb">
+      <DependentUpon>NMRegGeneralManualOperativoRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminPrueba.Designer.vb">
+      <DependentUpon>NMRegMypeBancoAdminPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminRenovacion.Designer.vb">
+      <DependentUpon>NMRegMypeBancoAdminRenovacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminRenovacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoBancoMotorizadoPrueba.Designer.vb">
+      <DependentUpon>NMRegMypeBancoBancoMotorizadoPrueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoBancoMotorizadoPrueba.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoTiempoParcial.Designer.vb">
+      <DependentUpon>ContratoTiempoParcial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoTiempoParcial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Gerentes_Jefaturas.Designer.vb">
+      <DependentUpon>Mype_InicioIncrementoActividad_Gerentes_Jefaturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Gerentes_Jefaturas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Supervisores.Designer.vb">
+      <DependentUpon>Mype_InicioIncrementoActividad_Supervisores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Supervisores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_PersonalAdministrativo.Designer.vb">
+      <DependentUpon>Mype_InicioIncrementoActividad_PersonalAdministrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_PersonalAdministrativo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Administradores.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralIngresos_Administradores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Administradores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Motorizados.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralIngresos_Motorizados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Motorizados.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Operativos.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralIngresos_Operativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Necesidad_Mercado\NM_RegimenGeneralIngresos_Operativos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Tiempo_Parcial\TP_Ingresos_Operativos.Designer.vb">
+      <DependentUpon>TP_Ingresos_Operativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Ingreso\Tiempo_Parcial\TP_Ingresos_Operativos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Administradores.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralReingresos_Administradores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Administradores.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Motorizados.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralReingresos_Motorizados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Motorizados.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Operativos.Designer.vb">
+      <DependentUpon>NM_RegimenGeneralReingresos_Operativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Necesidad_Mercado\NM_RegimenGeneralReingresos_Operativos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Tiempo_Parcial\TP_Reingresos_Operativos.Designer.vb">
+      <DependentUpon>TP_Reingresos_Operativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Contrato_Reingreso\Tiempo_Parcial\TP_Reingresos_Operativos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FormatoContratoNecesidadMercado.Designer.vb">
+      <DependentUpon>FormatoContratoNecesidadMercado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FormatoContratoNecesidadMercado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContratoMotorizadoNecesidadMercado.Designer.vb">
+      <DependentUpon>ContratoMotorizadoNecesidadMercado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContratoMotorizadoNecesidadMercado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptInformeDisciplinario.Designer.vb">
+      <DependentUpon>RptInformeDisciplinario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptInformeDisciplinario.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptLicenciaSinGoceHaber.Designer.vb">
+      <DependentUpon>RptLicenciaSinGoceHaber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptLicenciaSinGoceHaber.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptMemorandum.Designer.vb">
+      <DependentUpon>RptMemorandum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptMemorandum.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaEmpleadoList.Designer.vb">
+      <DependentUpon>SuspensionPerfectaEmpleadoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaEmpleadoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaHistorialList.Designer.vb">
+      <DependentUpon>SuspensionPerfectaHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaList.Designer.vb">
+      <DependentUpon>SuspensionPerfectaList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaMasivo.Designer.vb">
+      <DependentUpon>SuspensionPerfectaMasivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaMasivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaRevertir.Designer.vb">
+      <DependentUpon>SuspensionPerfectaRevertir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuspencionPerfecta\SuspensionPerfectaRevertir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacaciones\SolicitudVacacionesList.Designer.vb">
+      <DependentUpon>SolicitudVacacionesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vacaciones\SolicitudVacacionesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacaciones\VacacionesDetails.Designer.vb">
+      <DependentUpon>VacacionesDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vacaciones\VacacionesDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacaciones\VacacionesHistorialList.Designer.vb">
+      <DependentUpon>VacacionesHistorialList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vacaciones\VacacionesHistorialList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoAumentoSalarial.resx">
+      <DependentUpon>EmpleadoAumentoSalarial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoCargaMasiva.resx">
+      <DependentUpon>EmpleadoCargaMasiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalDefinitivo\CambioRazonIngresoEmpleadoEdit.resx">
+      <DependentUpon>CambioRazonIngresoEmpleadoEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\CapacitacionAsistencia.resx">
+      <DependentUpon>CapacitacionAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\CapacitacionNota.resx">
+      <DependentUpon>CapacitacionNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\CapacitacionTrabajador.resx">
+      <DependentUpon>CapacitacionTrabajador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\ClaseDetails.resx">
+      <DependentUpon>ClaseDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoSede.resx">
+      <DependentUpon>MantenimientoSede.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoSedeDetails.resx">
+      <DependentUpon>MantenimientoSedeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoCurso.resx">
+      <DependentUpon>MantenimientoCurso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoCursoDetails.resx">
+      <DependentUpon>MantenimientoCursoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoTipoEscuela.resx">
+      <DependentUpon>MantenimientoTipoEscuela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\MantenimientoTipoEscuelaDetails.resx">
+      <DependentUpon>MantenimientoTipoEscuelaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\ProgramacionCapacitacion.resx">
+      <DependentUpon>ProgramacionCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\ProgramacionCapacitacionDetails.resx">
+      <DependentUpon>ProgramacionCapacitacionDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\ProgramacionEscuela.resx">
+      <DependentUpon>ProgramacionEscuela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\ProgramacionEscuelaDetails.resx">
+      <DependentUpon>ProgramacionEscuelaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Report\NotasCursoEscuelaEmpleado.resx">
+      <DependentUpon>NotasCursoEscuelaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaCorrectiva\CartaCorrectivaArchivo.resx">
+      <DependentUpon>CartaCorrectivaArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaCorrectiva\SolicitudCartaCorrectivaList.resx">
+      <DependentUpon>SolicitudCartaCorrectivaList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaCorrectiva\SolicitudCartaCorrectivaListHistorial.resx">
+      <DependentUpon>SolicitudCartaCorrectivaListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DescuentoReintegro\DescuentoReintegroHistorialList.resx">
+      <DependentUpon>DescuentoReintegroHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DescuentoReintegro\DescuentoReintegroList.resx">
+      <DependentUpon>DescuentoReintegroList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DescuentoReintegro\ReporteDescuentoReintegroPrestamoList.resx">
+      <DependentUpon>ReporteDescuentoReintegroPrestamoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoEmpleado\EmpleadoModificacionDatos.resx">
+      <DependentUpon>EmpleadoModificacionDatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoEmpleado\OpcionesModificar.resx">
+      <DependentUpon>OpcionesModificar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\AsignarDerechoHabiente.resx">
+      <DependentUpon>AsignarDerechoHabiente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\DesprocesarbeneficioAsignacion.resx">
+      <DependentUpon>DesprocesarbeneficioAsignacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\ListadoDesasignarAsignacionFamiliar.resx">
+      <DependentUpon>ListadoDesasignarAsignacionFamiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\ListadoEmpleadosAsignacionFamiliar.resx">
+      <DependentUpon>ListadoEmpleadosAsignacionFamiliar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumEliminarFormato.resx">
+      <DependentUpon>MemorandumEliminarFormato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\CargaPlanilla.resx">
+      <DependentUpon>CargaPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\CargaPlanillaDetails.resx">
+      <DependentUpon>CargaPlanillaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\CargaPlanillaEmpleado.resx">
+      <DependentUpon>CargaPlanillaEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\ConceptoPlanilla.resx">
+      <DependentUpon>ConceptoPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\ConceptoPlanillaDetails.resx">
+      <DependentUpon>ConceptoPlanillaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\RespuestaPlanilla.resx">
+      <DependentUpon>RespuestaPlanilla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\RespuestaPlanillaDetails.resx">
+      <DependentUpon>RespuestaPlanillaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planillas\RespuestaPlanillaHistorial.resx">
+      <DependentUpon>RespuestaPlanillaHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonal.resx">
+      <DependentUpon>rptEmisionRequerimientoPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientoPersonalGrid.resx">
+      <DependentUpon>rptEmisionRequerimientoPersonalGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivosGrid.resx">
+      <DependentUpon>rptEmisionRequerimientosMasivosGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientoPersonalRPT.resx">
+      <DependentUpon>RequerimientoPersonalRPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenovacionContrato\EmpleadoHistorialRenovacion.resx">
+      <DependentUpon>EmpleadoHistorialRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenovacionContrato\EmpleadoRenovacionContratoList.resx">
+      <DependentUpon>EmpleadoRenovacionContratoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\ListadoHijos.resx">
+      <DependentUpon>ListadoHijos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonosExtras\BonoAntiguedadList.resx">
+      <DependentUpon>BonoAntiguedadList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonosExtras\BonoExtraEmpleadoList.resx">
+      <DependentUpon>BonoExtraEmpleadoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonosExtras\SolicitudBonoExtraDetails.resx">
+      <DependentUpon>SolicitudBonoExtraDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonosExtras\SolicitudBonoExtraList.resx">
+      <DependentUpon>SolicitudBonoExtraList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BonosExtras\SolicitudBonoExtraListHistorial.resx">
+      <DependentUpon>SolicitudBonoExtraListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalDefinitivo\CambioCargoDetails.resx">
+      <DependentUpon>CambioCargoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalDefinitivo\CambioDefinitivoDetails.resx">
+      <DependentUpon>CambioDefinitivoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalDefinitivo\CambioDefinitivoList.resx">
+      <DependentUpon>CambioDefinitivoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalDefinitivo\CambioDefinitivoListHistorial.resx">
+      <DependentUpon>CambioDefinitivoListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalTemporal\CambioTemporalDetails.resx">
+      <DependentUpon>CambioTemporalDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalTemporal\CambioTemporalList.resx">
+      <DependentUpon>CambioTemporalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioLocalTemporal\CambioTemporalListHistorial.resx">
+      <DependentUpon>CambioTemporalListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaConocimiento\CartaConocimientoArchivos.resx">
+      <DependentUpon>CartaConocimientoArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaConocimiento\CartaConocimientoDetails.resx">
+      <DependentUpon>CartaConocimientoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaConocimiento\CartaConocimientoHistorialList.resx">
+      <DependentUpon>CartaConocimientoHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaConocimiento\CartaConocimientoList.resx">
+      <DependentUpon>CartaConocimientoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaRenuncia\CartaRenunciaListHistorial.resx">
+      <DependentUpon>CartaRenunciaListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaRenuncia\RenunciaArchivo.resx">
+      <DependentUpon>RenunciaArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaRenuncia\RenunciaDetails.resx">
+      <DependentUpon>RenunciaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartaRenuncia\SolicitudCartaRenunciaList.resx">
+      <DependentUpon>SolicitudCartaRenunciaList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\EmpleadoCese.resx">
+      <DependentUpon>EmpleadoCese.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\EmpleadoCeseDetails.resx">
+      <DependentUpon>EmpleadoCeseDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\EmpleadoCeseListHistorial.resx">
+      <DependentUpon>EmpleadoCeseListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\EmpleadoDerechoHabientes.resx">
+      <DependentUpon>EmpleadoDerechoHabientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\AsignacionFamiliarDetalle.resx">
+      <DependentUpon>AsignacionFamiliarDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\SolicitudAsignacionFamiliarList.resx">
+      <DependentUpon>SolicitudAsignacionFamiliarList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsignacionFamiliar\SolicitudAsignacionFamiliarListHistorial.resx">
+      <DependentUpon>SolicitudAsignacionFamiliarListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoHistorial.resx">
+      <DependentUpon>EmpleadoHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoIngresoList.resx">
+      <DependentUpon>EmpleadoIngresoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoList.resx">
+      <DependentUpon>EmpleadoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoListEditHijos.resx">
+      <DependentUpon>EmpleadoListEditHijos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\SolicitudCeseLegalList.resx">
+      <DependentUpon>SolicitudCeseLegalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\SolicitudCeseNoLegalList.resx">
+      <DependentUpon>SolicitudCeseNoLegalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidenteAccidente\IncidenteAccidenteArchivos.resx">
+      <DependentUpon>IncidenteAccidenteArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidenteAccidente\IncidenteAccidenteDetails.resx">
+      <DependentUpon>IncidenteAccidenteDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidenteAccidente\IncidenteAccidenteHistorialList.resx">
+      <DependentUpon>IncidenteAccidenteHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidenteAccidente\IncidenteAccidenteList.resx">
+      <DependentUpon>IncidenteAccidenteList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeGeneral\InformeGeneralArchivos.resx">
+      <DependentUpon>InformeGeneralArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeGeneral\InformeGeneralDetails.resx">
+      <DependentUpon>InformeGeneralDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeGeneral\InformeGeneralHistorialList.resx">
+      <DependentUpon>InformeGeneralHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeGeneral\InformeGeneralList.resx">
+      <DependentUpon>InformeGeneralList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lactancia\LactanciaArchivo.resx">
+      <DependentUpon>LactanciaArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lactancia\LactanciaDetails.resx">
+      <DependentUpon>LactanciaDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lactancia\LactanciaList.resx">
+      <DependentUpon>LactanciaList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lactancia\LactanciaListHistorial.resx">
+      <DependentUpon>LactanciaListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaActa.resx">
+      <DependentUpon>LicenciaActa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaArchivo.resx">
+      <DependentUpon>LicenciaArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaConGoceListHistorial.resx">
+      <DependentUpon>LicenciaConGoceListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaEnfermedadList.resx">
+      <DependentUpon>LicenciaEnfermedadList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaEnfermedadListHistorial.resx">
+      <DependentUpon>LicenciaEnfermedadListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciasValidadasList.resx">
+      <DependentUpon>LicenciasValidadasList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumAnular.resx">
+      <DependentUpon>MemorandumAnular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumArchivos.resx">
+      <DependentUpon>MemorandumArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumDescargo.resx">
+      <DependentUpon>MemorandumDescargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumDetails.resx">
+      <DependentUpon>MemorandumDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumExonerar.resx">
+      <DependentUpon>MemorandumExonerar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumLegalEvaluadosList.resx">
+      <DependentUpon>MemorandumLegalEvaluadosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumLegalList.resx">
+      <DependentUpon>MemorandumLegalList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumList.resx">
+      <DependentUpon>MemorandumList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\EmpleadoMovimiento.resx">
+      <DependentUpon>EmpleadoMovimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenovacionContrato\EmpleadoRenovacionList.resx">
+      <DependentUpon>EmpleadoRenovacionList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\IngresoPersonalEdit.resx">
+      <DependentUpon>IngresoPersonalEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumListHistorial.resx">
+      <DependentUpon>MemorandumListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciasDetails.resx">
+      <DependentUpon>LicenciasDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorandum\MemorandumListHistorialLegal.resx">
+      <DependentUpon>MemorandumListHistorialLegal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\ReportView.resx">
+      <DependentUpon>ReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\SolicitudCeseDescargoArchivos.resx">
+      <DependentUpon>SolicitudCeseDescargoArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\SolicitudCeseEvaluadosList.resx">
+      <DependentUpon>SolicitudCeseEvaluadosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceses\SolicitudCeseList.resx">
+      <DependentUpon>SolicitudCeseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionesPersonal\XtraUserControlWebBrowser.resx">
+      <DependentUpon>XtraUserControlWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciaSinGoceListHistorial.resx">
+      <DependentUpon>LicenciaSinGoceListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciasSinGoceList.resx">
+      <DependentUpon>LicenciasSinGoceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NegacionTranslado\NegacionTrasladoArchivos.resx">
+      <DependentUpon>NegacionTrasladoArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NegacionTranslado\NegacionTrasladoDetails.resx">
+      <DependentUpon>NegacionTrasladoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NegacionTranslado\NegacionTrasladoHistorialList.resx">
+      <DependentUpon>NegacionTrasladoHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NegacionTranslado\NegacionTrasladoList.resx">
+      <DependentUpon>NegacionTrasladoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\PrestamosDepositoDetails.resx">
+      <DependentUpon>PrestamosDepositoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\PrestamosDepositoList.resx">
+      <DependentUpon>PrestamosDepositoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\PrestamosRevisadosList.resx">
+      <DependentUpon>PrestamosRevisadosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\PrestamosAdryanList.resx">
+      <DependentUpon>PrestamosAdryanList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licencias\LicenciasConGoceList.resx">
+      <DependentUpon>LicenciasConGoceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\SolicitudPrestamoArchivos.resx">
+      <DependentUpon>SolicitudPrestamoArchivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\SolicitudPrestamoDetails.resx">
+      <DependentUpon>SolicitudPrestamoDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\SolicitudPrestamoList.resx">
+      <DependentUpon>SolicitudPrestamoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos\SolicitudPrestamoListHistorial.resx">
+      <DependentUpon>SolicitudPrestamoListHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\Conclusion.resx">
+      <DependentUpon>Conclusion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEdit.resx">
+      <DependentUpon>ConclusionEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\ConclusionEditDetalle.resx">
+      <DependentUpon>ConclusionEditDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActual.resx">
+      <DependentUpon>EstadoCondicionActual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\EstadoCondicionActualEdit.resx">
+      <DependentUpon>EstadoCondicionActualEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulante.resx">
+      <DependentUpon>EstadoPostulante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\EstadoPostulanteEdit.resx">
+      <DependentUpon>EstadoPostulanteEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamiento.resx">
+      <DependentUpon>FuenteReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEdit.resx">
+      <DependentUpon>FuenteReclutamientoEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Mantenimientos\FuenteReclutamientoEditDetalle.resx">
+      <DependentUpon>FuenteReclutamientoEditDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionCanalesReclutamiento.resx">
+      <DependentUpon>rptEmisionCanalesReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionConclusionPostulanteCanalReclutamiento.resx">
+      <DependentUpon>rptEmisionConclusionPostulanteCanalReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionPuestosPorCanalReclutamiento.resx">
+      <DependentUpon>rptEmisionPuestosPorCanalReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\rptEmisionRequerimientosMasivos.resx">
+      <DependentUpon>rptEmisionRequerimientosMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RequerimientosProcesadosNoMasivos.resx">
+      <DependentUpon>RequerimientosProcesadosNoMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEDesktop.resx">
+      <DependentUpon>MEDesktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQMasivosPostulantes.resx">
+      <DependentUpon>RQMasivosPostulantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQMasivosPostulantesAgregar.resx">
+      <DependentUpon>RQMasivosPostulantesAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQNoMasivosPostulantes.resx">
+      <DependentUpon>RQNoMasivosPostulantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQNoMasivosPostulantesAgregar.resx">
+      <DependentUpon>RQNoMasivosPostulantesAgregar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQNoMasivosPostulantesBuscar.resx">
+      <DependentUpon>RQNoMasivosPostulantesBuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\PostulantesMasivosProcesados.resx">
+      <DependentUpon>PostulantesMasivosProcesados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\EmisionCanalesReclutamiento.resx">
+      <DependentUpon>EmisionCanalesReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\EmisionConclusionPostulanteCanalReclutamiento.resx">
+      <DependentUpon>EmisionConclusionPostulanteCanalReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\EmisionRequerimientosMasivos.resx">
+      <DependentUpon>EmisionRequerimientosMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\ListadoPostulantesMasivos.resx">
+      <DependentUpon>ListadoPostulantesMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\ListadoPostulantesNoMasivos.resx">
+      <DependentUpon>ListadoPostulantesNoMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\EmisionPuestosPorCanalReclutamiento.resx">
+      <DependentUpon>EmisionPuestosPorCanalReclutamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\ReporteView.resx">
+      <DependentUpon>ReporteView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\RPT\CanalesReclutamientoRPT.resx">
+      <DependentUpon>CanalesReclutamientoRPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\RPT\ConclusionPostulanteCanalReclutamientoRPT.resx">
+      <DependentUpon>ConclusionPostulanteCanalReclutamientoRPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\RPT\PuestosPorCanalReclutamientoRPT.resx">
+      <DependentUpon>PuestosPorCanalReclutamientoRPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\Reportes\RPT\RequerimientosMasivosRPT.resx">
+      <DependentUpon>RequerimientosMasivosRPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RequerimientosProcesadosMasivos.resx">
+      <DependentUpon>RequerimientosProcesadosMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RequerimientosMasivos.resx">
+      <DependentUpon>RequerimientosMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RequerimientosNoMasivos.resx">
+      <DependentUpon>RequerimientosNoMasivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReclutamientoSeleccion\RQNoMasivosVerPostulantes.resx">
+      <DependentUpon>RQNoMasivosVerPostulantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenovacionContrato\EnvioCorreoFirma.resx">
+      <DependentUpon>EnvioCorreoFirma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoMotorizadoTiempoParcial.resx">
+      <DependentUpon>ContratoMotorizadoTiempoParcial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoNecesidadMercado.resx">
+      <DependentUpon>ContratoNecesidadMercado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminPrueba.resx">
+      <DependentUpon>NMRegGeneralBanAdminPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanAdminRenovacion.resx">
+      <DependentUpon>NMRegGeneralBanAdminRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizadoRenovacion.resx">
+      <DependentUpon>NMRegGeneralBanMotorizadoRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanMotorizardoPrueba.resx">
+      <DependentUpon>NMRegGeneralBanMotorizardoPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneralBanOperativoPrueba.resx">
+      <DependentUpon>NMRegGeneralBanOperativoPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Bancario\NMRegGeneraBanOperativoRenovacion.resx">
+      <DependentUpon>NMRegGeneraBanOperativoRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminPrueba.resx">
+      <DependentUpon>NMRegGeneralManualAdminPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualAdminRenovacion.resx">
+      <DependentUpon>NMRegGeneralManualAdminRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotoritazoPrueba.resx">
+      <DependentUpon>NMRegGeneralManualMotoritazoPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualMotorizadoRenovacion.resx">
+      <DependentUpon>NMRegGeneralManualMotorizadoRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoPrueba.resx">
+      <DependentUpon>NMRegGeneralManualOperativoPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenGeneral\Manual\NMRegGeneralManualOperativoRenovacion.resx">
+      <DependentUpon>NMRegGeneralManualOperativoRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminPrueba.resx">
+      <DependentUpon>NMRegMypeBancoAdminPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoAdminRenovacion.resx">
+      <DependentUpon>NMRegMypeBancoAdminRenovacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Bancario\NMRegMypeBancoBancoMotorizadoPrueba.resx">
+      <DependentUpon>NMRegMypeBancoBancoMotorizadoPrueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoTiempoParcial.resx">
+      <DependentUpon>ContratoTiempoParcial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Gerentes_Jefaturas.resx">
+      <DependentUpon>Mype_InicioIncrementoActividad_Gerentes_Jefaturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_PersonalAdministrativo.resx">
+      <DependentUpon>Mype_InicioIncrementoActividad_PersonalAdministrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Contrato_HyAsesores\Mype\Mype_InicioIncrementoActividad_Supervisores.resx">
+      <DependentUpon>Mype_InicioIncrementoActividad_Supervisores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FormatoContratoNecesidadMercado.resx">
+      <DependentUpon>FormatoContratoNecesidadMercado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContratoMotorizadoNecesidadMercado.resx">
+      <DependentUpon>ContratoMotorizadoNecesidadMercado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptInformeDisciplinario.resx">
+      <DependentUpon>RptInformeDisciplinario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptLicenciaSinGoceHaber.resx">
+      <DependentUpon>RptLicenciaSinGoceHaber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RptMemorandum.resx">
+      <DependentUpon>RptMemorandum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuspencionPerfecta\SuspensionPerfectaEmpleadoList.resx">
+      <DependentUpon>SuspensionPerfectaEmpleadoList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuspencionPerfecta\SuspensionPerfectaHistorialList.resx">
+      <DependentUpon>SuspensionPerfectaHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuspencionPerfecta\SuspensionPerfectaList.resx">
+      <DependentUpon>SuspensionPerfectaList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuspencionPerfecta\SuspensionPerfectaMasivo.resx">
+      <DependentUpon>SuspensionPerfectaMasivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuspencionPerfecta\SuspensionPerfectaRevertir.resx">
+      <DependentUpon>SuspensionPerfectaRevertir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacaciones\SolicitudVacacionesList.resx">
+      <DependentUpon>SolicitudVacacionesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacaciones\VacacionesDetails.resx">
+      <DependentUpon>VacacionesDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacaciones\VacacionesHistorialList.resx">
+      <DependentUpon>VacacionesHistorialList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MC.Data\MC.Data.vbproj">
+      <Project>{c0727d4a-840e-44ea-9a07-14c77ad52df2}</Project>
+      <Name>MC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MC.Framework\MC.Framework.vbproj">
+      <Project>{cc4aec34-f3b7-4059-9a68-3fcd08a23beb}</Project>
+      <Name>MC.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccionPersonal.png" />
+    <None Include="Resources\Historial.png" />
+    <None Include="Resources\AllowUsersToEditRanges_32x32.png" />
+    <None Include="Resources\CambioDefinitivo.png" />
+    <None Include="Resources\CambioTemporal.png" />
+    <None Include="Resources\IncidenteAccidente.png" />
+    <None Include="Resources\CartaConocimiento.png" />
+    <None Include="Resources\InsertFooter_32x32.png" />
+    <None Include="Resources\Information_32x32.png" />
+    <None Include="Resources\Categories_32x32.png" />
+    <None Include="Resources\BOPosition2_32x32.png" />
+    <Content Include="Resources\LogoLogin.jpg" />
+    <None Include="Resources\ReclutamientoSeleccion.png" />
+    <None Include="Resources\Mantenimiento.png" />
+    <None Include="Resources\Prestamos.png" />
+    <None Include="Resources\RecentlyUse_32x32.png" />
+    <None Include="Resources\UserGroup_32x32.png" />
+    <None Include="Resources\Math&amp;Trig_32x32.png" />
+    <None Include="Resources\Renuncias.png" />
+    <None Include="Resources\Text_32x32.png" />
+    <Content Include="SistemaGestionRRHH.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\ContratoPlazoFijo\Extranjero\RegimenGeneral\" />
+    <Folder Include="Reports\ContratoPlazoFijo\Extranjero\RegimenPyme\" />
+    <Folder Include="Reports\ContratoPlazoFijo\InicioIncrementoLaboral\RegimenPyme\" />
+    <Folder Include="Reports\ContratoPlazoFijo\InicioIncrementoLaboral\RgimenGeneral\" />
+    <Folder Include="Reports\ContratoPlazoFijo\NecesidadMercado\RegimenPyme\Manual\" />
+    <Folder Include="Reports\ContratoTiempoParcial\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

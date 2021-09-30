@@ -1,0 +1,33 @@
+﻿Public Class RequerimientoPersonalBE
+    Public Property IDREQUERIMIENTO As Integer
+    Public Property IDREQUERIMIENTOPERSONAL As Integer
+    Public Property NUMEROREQUERIMIENTOPERSONAL As String
+    Public Property IDLOCAL As Integer
+    Public Property FECHA As Date
+    Public Property IDSOLICITANTE As Integer
+    Public Property IDCARGOSOLICITANTE As Integer
+    Public Property USUARIOREGISTRO As Integer
+    Public Property FECHAREGISTRO As DateTime
+    Public Property IDEMPLEADO As Integer
+    Public Property IDCARGOEMPLEADO As Integer
+    Public Property IDCARGOREQUERIDO As Integer
+    Public Property IDREQUERIMIENTOMOTIVO As Integer
+    Public Property IDHORAS As Integer
+    Public Property IDTURNO As Integer
+    Public Property IDTIPO As Integer
+    Public Property OBSERVACION As String
+    Public Property ESTADOBLOQUEO As Integer
+    Public Property ESTADOAPROBADO As Integer
+    Public Property ESTADOREVISADO As Integer
+    Public Property ESTADOANULADO As Integer
+    Public Property USUARIOANULADO As String
+    Public Property MOTIVO As String
+    Public Property HORAS As String
+    Public Property TURNO As String
+    Public Property TIPO As String
+    Public Property NUMEROVACANTES As Integer
+    Public Property NOMBRESOLICITANTE As String
+    Public Property NOMBREEMPLEADO As String
+    Public Property RAZONCOMERCIAL As String
+    Public Property CARGOREQUERIDO As String
+End Class

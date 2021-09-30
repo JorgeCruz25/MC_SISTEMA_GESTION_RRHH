@@ -1,0 +1,3 @@
+﻿Public Class NM_RegimenGeneralIngresos_Motorizados
+
+End Class

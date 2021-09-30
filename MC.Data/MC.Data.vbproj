@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0727D4A-840E-44EA-9A07-14C77AD52DF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MC.Data</RootNamespace>
+    <AssemblyName>MC.Data</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BE\AsignacionFamiliarBE.vb" />
+    <Compile Include="BE\BonoExtraAntiguedadBE.vb" />
+    <Compile Include="BE\BonoExtraBE.vb" />
+    <Compile Include="BE\CambioLocalDefinitivoBE.vb" />
+    <Compile Include="BE\CambioLocalTemporalBE.vb" />
+    <Compile Include="BE\CartaConocimientoBE.vb" />
+    <Compile Include="BE\CeseBE.vb" />
+    <Compile Include="BE\ConclusionBE.vb" />
+    <Compile Include="BE\ConclusionDetalleBE.vb" />
+    <Compile Include="BE\EmpleadoAumentoSueldoBE.vb" />
+    <Compile Include="BE\EmpleadoBE.vb" />
+    <Compile Include="BE\EmpleadoCeseBE.vb" />
+    <Compile Include="BE\EmpleadoDerechoHabienteBE.vb" />
+    <Compile Include="BE\EmpleadoMovimientoBE.vb" />
+    <Compile Include="BE\EmpleadoReingresoBE.vb" />
+    <Compile Include="BE\EstadoCondicionActualBE.vb" />
+    <Compile Include="BE\EstadoPostulanteBE.vb" />
+    <Compile Include="BE\FuenteReclutamientoBE.vb" />
+    <Compile Include="BE\FuenteReclutamientoDetalleBE.vb" />
+    <Compile Include="BE\IncidenteAccidenteBE.vb" />
+    <Compile Include="BE\InformeGeneralBE.vb" />
+    <Compile Include="BE\LactanciaBE.vb" />
+    <Compile Include="BE\LicenciasBE.vb" />
+    <Compile Include="BE\LocalBE.vb" />
+    <Compile Include="BE\MemorandumBE.vb" />
+    <Compile Include="BE\NegacionTrasladoBE.vb" />
+    <Compile Include="BE\PlanillaBE.vb" />
+    <Compile Include="BE\PostulanteMasivoBE.vb" />
+    <Compile Include="BE\PostulanteNoMasivoBE.vb" />
+    <Compile Include="BE\PrestamosBE.vb" />
+    <Compile Include="BE\RenovacionContratoBE.vb" />
+    <Compile Include="BE\RenunciasBE.vb" />
+    <Compile Include="BE\RequerimientoPersonalBE.vb" />
+    <Compile Include="BE\SolicitudPuestoBE.vb" />
+    <Compile Include="BE\UsuarioBE.vb" />
+    <Compile Include="BE\VacacionesBE.vb" />
+    <Compile Include="DAO\BDAccionPersonalDAO.vb" />
+    <Compile Include="DAO\BonoExtraDAO.vb" />
+    <Compile Include="DAO\CambioLocalDefinitivoDAO.vb" />
+    <Compile Include="DAO\CambioLocalTemporalDAO.vb" />
+    <Compile Include="DAO\CapacitacionDAO.vb" />
+    <Compile Include="DAO\CartaConocimientoDAO.vb" />
+    <Compile Include="DAO\CartaCorrectivaDAO.vb" />
+    <Compile Include="DAO\CeseDAO.vb" />
+    <Compile Include="DAO\ConexionDAO.vb" />
+    <Compile Include="DAO\BDCentralDAO.vb" />
+    <Compile Include="DAO\DescuentoReintegroDAO.vb" />
+    <Compile Include="DAO\IncidenteAccidenteDAO.vb" />
+    <Compile Include="DAO\InformeGeneralDAO.vb" />
+    <Compile Include="DAO\LactanciaDAO.vb" />
+    <Compile Include="DAO\LicenciaDAO.vb" />
+    <Compile Include="DAO\MemorandumDAO.vb" />
+    <Compile Include="DAO\NegacionTrasladoDAO.vb" />
+    <Compile Include="DAO\PlanillaDAO.vb" />
+    <Compile Include="DAO\PrestamoDAO.vb" />
+    <Compile Include="DAO\RenovacionContratoDAO.vb" />
+    <Compile Include="DAO\RenunciaDAO.vb" />
+    <Compile Include="DAO\SuspencionPerfectaDAO.vb" />
+    <Compile Include="DAO\VacacionesDAO.vb" />
+    <Compile Include="MODULOS\DataReaderExtensions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DAO\UsuarioDAO.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
