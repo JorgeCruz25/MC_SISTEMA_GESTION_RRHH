@@ -35,6 +35,7 @@ Partial Class RespuestaPlanillaDetails
         Me.RepositoryItemDateEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemDateEdit()
         Me.BbiAnio = New DevExpress.XtraBars.BarButtonItem()
         Me.BbiMes = New DevExpress.XtraBars.BarButtonItem()
+        Me.Historico = New DevExpress.XtraBars.BarButtonItem()
         Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -50,11 +51,11 @@ Partial Class RespuestaPlanillaDetails
         Me.GridControl4 = New DevExpress.XtraGrid.GridControl()
         Me.GridView4 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Historico = New DevExpress.XtraBars.BarButtonItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
         Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         CType(Me.RibbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemDateEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemDateEdit1.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,9 +81,9 @@ Partial Class RespuestaPlanillaDetails
         'RibbonControl
         '
         Me.RibbonControl.ExpandCollapseItem.Id = 0
-        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.btnCerrar, Me.btnRefrescar, Me.btnExportar, Me.btnImportar, Me.BarEditItem1, Me.BarEditItem2, Me.BbiAnio, Me.BbiMes, Me.Historico})
+        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.btnCerrar, Me.btnRefrescar, Me.btnExportar, Me.btnImportar, Me.BarEditItem1, Me.BarEditItem2, Me.BbiAnio, Me.BbiMes, Me.Historico, Me.BarButtonItem1})
         Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl.MaxItemId = 10
+        Me.RibbonControl.MaxItemId = 11
         Me.RibbonControl.Name = "RibbonControl"
         Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1})
         Me.RibbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemDateEdit1, Me.RepositoryItemDateEdit2})
@@ -163,6 +164,14 @@ Partial Class RespuestaPlanillaDetails
         Me.BbiMes.Id = 8
         Me.BbiMes.Name = "BbiMes"
         '
+        'Historico
+        '
+        Me.Historico.Caption = "Historico"
+        Me.Historico.Glyph = CType(resources.GetObject("Historico.Glyph"), System.Drawing.Image)
+        Me.Historico.Id = 9
+        Me.Historico.LargeGlyph = CType(resources.GetObject("Historico.LargeGlyph"), System.Drawing.Image)
+        Me.Historico.Name = "Historico"
+        '
         'RibbonPage1
         '
         Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1, Me.RibbonPageGroup3})
@@ -183,6 +192,7 @@ Partial Class RespuestaPlanillaDetails
         '
         Me.RibbonPageGroup3.ItemLinks.Add(Me.BbiAnio)
         Me.RibbonPageGroup3.ItemLinks.Add(Me.BbiMes)
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem1)
         Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
         Me.RibbonPageGroup3.Text = "Planilla"
         '
@@ -201,7 +211,7 @@ Partial Class RespuestaPlanillaDetails
         Me.GridControl1.MenuManager = Me.RibbonControl
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemButtonEditArchivo, Me.RepositoryItemActaCompromiso})
-        Me.GridControl1.Size = New System.Drawing.Size(709, 141)
+        Me.GridControl1.Size = New System.Drawing.Size(709, 142)
         Me.GridControl1.TabIndex = 11
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -230,12 +240,12 @@ Partial Class RespuestaPlanillaDetails
         'GridControl2
         '
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GridControl2.Location = New System.Drawing.Point(3, 150)
+        Me.GridControl2.Location = New System.Drawing.Point(3, 151)
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.MenuManager = Me.RibbonControl
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemButtonEdit1, Me.RepositoryItemButtonEdit2})
-        Me.GridControl2.Size = New System.Drawing.Size(709, 291)
+        Me.GridControl2.Size = New System.Drawing.Size(709, 290)
         Me.GridControl2.TabIndex = 12
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -279,14 +289,6 @@ Partial Class RespuestaPlanillaDetails
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Historico
-        '
-        Me.Historico.Caption = "Historico"
-        Me.Historico.Glyph = CType(resources.GetObject("Historico.Glyph"), System.Drawing.Image)
-        Me.Historico.Id = 9
-        Me.Historico.LargeGlyph = CType(resources.GetObject("Historico.LargeGlyph"), System.Drawing.Image)
-        Me.Historico.Name = "Historico"
         '
         'TableLayoutPanel1
         '
@@ -332,6 +334,12 @@ Partial Class RespuestaPlanillaDetails
         Me.LayoutControlItem1.Size = New System.Drawing.Size(719, 448)
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem1.TextVisible = False
+        '
+        'BarButtonItem1
+        '
+        Me.BarButtonItem1.Caption = "BarButtonItem1"
+        Me.BarButtonItem1.Id = 10
+        Me.BarButtonItem1.Name = "BarButtonItem1"
         '
         'RespuestaPlanillaDetails
         '
@@ -402,4 +410,5 @@ Partial Class RespuestaPlanillaDetails
     Friend WithEvents LayoutControl1 As DevExpress.XtraLayout.LayoutControl
     Friend WithEvents LayoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+    Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
 End Class
